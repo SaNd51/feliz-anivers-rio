@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-text-size-adjust: 100%;
+    --primary-color: rgb(175, 35, 35);
+    --secondary-color: black;
+}
+
+body{
+    display: block;
+
+}
+
+
+.main{
+    background-image: url("/bel/assets/fundo.jpg");
+    background-size: 600px;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.frame {
+    width: 18rem;
+    background-color: #d54fce91;
+    border: 2px solid rgb(6 36 93 / 34%);
+    border-radius: 5%;
+    border-style: dashed;
+}
+
+.frame img{
+    width: 99%;
+}
+
+.grid-itens{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: var(--primary-color);
+    align-items: center;
+    margin: 20px;
+    padding-top: 3rem;
+    justify-content: space-around;
+
+}
+.itens{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.itens img{
+    width: 100%;
+    animation: go-back 0.3s alternate-reverse infinite;
+}
+
+
+.modal-content{
+    height: auto;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.modal.show .modal-dialog {
+    height: 100vh;
+    display: flex;
+    margin-top: 0;
+    align-items: center;
+}
+
+.align-center{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.mb{
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+
+.align-center .itens{
+    background-color: #404040d6;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+@keyframes go-back {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 80%;
+    }
+    
+}
+
+@media (max-width: 720px) {
+    h4{
+        font-size: 1.4rem;
+    }
+
+    .align-center{
+        width: auto;
+    }
+
+    .itens{
+        width: 50%;
+    }
+    .container{
+        width: 100%;
+    }
+
+    .grid-itens{
+        flex-direction: column;
+        
+    }
+    .grid-itens .itens{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col{
+        width: 75%;
+        margin: 0;
+        margin-bottom: 1rem;
+        align-items: center;
+    }
+
+    .icons{
+        width: 100%;
+    }
+
+    img{
+        width: 50%;
+    }
+    .rounded{
+        width: 35%;
+    }
+    .mb{
+        margin-bottom: 0.5rem;
+    }
+    
+
+    
+}
+
+
+
