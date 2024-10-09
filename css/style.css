@@ -21,7 +21,7 @@ body{
 
 
 .main{
-    background-image: url("assets/fundo.jpg");
+    background-image: url("/assets/fundo.jpg");
     background-size: 600px;
     background-attachment: fixed;
     display: flex;
